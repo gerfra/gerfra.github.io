@@ -1,101 +1,218 @@
-<!-- Copyright NEXTECHNICS.COM 2023  -->
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="description" content="Francesco Gerratana Repository GitHub">
-    <meta name="author" content="Francesco Gerratana Repository GitHub">
-	
-    <meta name="keywords" content="Francesco Gerratana Repository GitHub" />
-    <meta name="googlebot" content="index,follow" />
-    <meta name="SLURP" content="index,follow" />
-    <meta name="TEOMA" content="index,follow" />
-    <meta name="ROBOTS" content="index,follow" />
-	
-    <title>Francesco Gerratana Repository GitHub</title>
-
-	<!-- Bootstrap -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/aos.css">
-	<link href="fontawesome/css/all.css" rel="stylesheet">
-	<link href="fontawesome/css/fontawesome.css" rel="stylesheet">
-	<link href="fontawesome/css/brands.css" rel="stylesheet">
-	<link href="fontawesome/css/solid.css" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha512-mSYUmp1HYZDFaVKK//63EcZq4iFWFjxSL+Z3T/aCt4IO9Cejm03q3NKKYN6pFQzY0SBOr8h+eCIAZHPXcpZaNw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="css/style.css">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Il miglior sito web gratuito per imparare a programmare in vari linguaggi di sviluppo e accedere ai repository di Github.">
+  <meta name="keywords" content="programmazione, linguaggi di sviluppo, Python, C++, Javascript, CSS3, Git, Github, repository, codice, progetti">
+  <meta name="author" content="Francesco Gerratana">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="bingbot" content="index, follow">
+  <meta property="og:title" content="Il miglior sito web gratuito per imparare a programmare in vari linguaggi di sviluppo e accedere ai repository di Github.">
+  <meta property="og:description" content="Il miglior sito web gratuito per imparare a programmare in vari linguaggi di sviluppo e accedere ai repository di Github.">
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/9303236?v=4">
+  <meta property="og:url" content="https://www.nextechnics.com">
+  <meta name="twitter:title" content="Il miglior sito web gratuito per imparare a programmare in vari linguaggi di sviluppo e accedere ai repository di Github.">
+  <meta name="twitter:description" content="Il miglior sito gratuito web per imparare a programmare in vari linguaggi di sviluppo e accedere ai repository di Github.">
+  <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/9303236?v=4">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Il miglior sito web gratuito per imparare a programmare in vari linguaggi di sviluppo e accedere ai repository di Github.</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
 </head>
-<body id="nva" class="d-flex flex-column min-vh-100">
+<body>
+  <div id="lnav" class="p-3 text-bg-dark">
+    <a href="index.html" class="align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+      <img src="img/9303236.png" class="img-thumbnail rounded-circle me-2" />
+    </a>
+    <hr />
+    <ul class="nav nav-pills flex-column mb-auto animated fadeInDown">
+      <li class="nav-item">
+        <a href="#home" class="nav-link active" aria-current="page">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+          </svg>
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="#projects" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-git" viewBox="0 0 16 16">
+            <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457" />
+          </svg>
+          Projects
+        </a>
+      </li>
+      <li>
+        <a href="#chartdiv" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z" />
+          </svg>
+          Stats
+        </a>
+      </li>
+      <li>
+        <a href="#about" class="nav-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+          </svg>
+          About
+        </a>
+      </li>
+    </ul>
+    <hr />
+    <div class="text-center">
+      <a href="#" class="text-decoration-none">
+        <span id="clock" class="text-white">8:10:45</span>
+      </a>
+    </div>
+  </div>
 
-	<div class="navigation-wrap bg-light start-header start-style fixed-top w-100">
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<nav class="navbar navbar-expand-md navbar-light">
-						<a id="titolo" class="navbar-brand" href="index.html">Francesco Gerratana Repository</a>
-						<!--
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav ml-auto py-4 py-md-0">
-								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link" href="index.html">#</a>
-								</li>								
-								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link" href="index.html">#</a>
-								</li>
-								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link" href="index.html">#</a>
-								</li>
-								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4">
-									<a class="nav-link" href="index.html">#</a>
-								</li>												
-								<li class="nav-item pl-4 pl-md-0 ml-0 ml-md-4 active">
-									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">#</a>
-									<div class="dropdown-menu dropdown-menu-right">
-										<a class="dropdown-item" href="index.html">#</a>
-										<a class="dropdown-item" href="index.html">#</a>
-										<a class="dropdown-item selzionato" href="#">#</a>
-									</div>
-								</li>							 
-							</ul>
-						</div>-->						
-					</nav>		
-				</div>
-			</div>
-		</div>
-	</div>	
+  <!-- navbar -->
+  <nav id="mobile" class="navbar navbar navbar-dark bg-dark bg-body-tertiary" aria-label="Navbar Mobile">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="javascript:void(0);">
+        <img src="img/9303236.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top img-thumbnail rounded-circle me-2 p-0" />
+        Bootstrap
+      </a>
 
-<section id="foot" class="mt-auto">
-	<div class="col-md-12 mt-5">
-		<div class="row">
-			<div class="col-md-6 text-center footer-copyright pt-4">
-				<p class="text-center">copyright © 2023 Francesco Gerratana</p>
-			</div>
-			<div class="col-md-6 text-center footer-copyright pt-4">
-				<p class="text-center"><a href="https://www.nextechnics.com" title="nextechnics.com">nextechnics</a></p>
-			</div>
-		</div>	
-	</div>
-</section>
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#mobilenavbar" aria-controls="mobilenavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
+      <div class="navbar-collapse collapse" id="mobilenavbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active" aria-current="page">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+              </svg>
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-git" viewBox="0 0 16 16">
+                <path d="M15.698 7.287 8.712.302a1.03 1.03 0 0 0-1.457 0l-1.45 1.45 1.84 1.84a1.223 1.223 0 0 1 1.55 1.56l1.773 1.774a1.224 1.224 0 0 1 1.267 2.025 1.226 1.226 0 0 1-2.002-1.334L8.58 5.963v4.353a1.226 1.226 0 1 1-1.008-.036V5.887a1.226 1.226 0 0 1-.666-1.608L5.093 2.465l-4.79 4.79a1.03 1.03 0 0 0 0 1.457l6.986 6.986a1.03 1.03 0 0 0 1.457 0l6.953-6.953a1.031 1.031 0 0 0 0-1.457" />
+              </svg>
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href="#chartdiv" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z" />
+              </svg>
+              Stats
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+              </svg>
+              About
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar -->
+  <div id="contenitore" data-bs-spy="scroll" data-bs-target="#sidenavbar" data-bs-offset="10" tabindex="0" class="container-fluid">
+    <div class="row">
+      <div id="home" class="col-12">
+        <h1>Welcome</h1>
+        <p>
+          Hello and welcome, on this page you will find my public
+          repositories, which I have decided to share with you. You will find
+          a bit of everything, Javascript, Python, C++ etc...
+          Many of these repositories were written to solve my personal needs,
+          during my free time, such as DxO-Batch-Image which was born from my
+          curiosity and the need to massively process RAW images without using
+          the official program GUI. Or
+          Temperature-Hardware-LibreHardwareMonitorLib which, on the other
+          hand, was extracted from a work project of mine where, among many
+          specifications, I had to monitor hardware components. All my code is
+          free, don't worry about it, I won't even change the licenses in the
+          future like some sneaky people do!!! What would be nice is your
+          participation, maybe by putting a star or following my repository
+          further, then if you feel like Santa Claus, you can also offer me a
+          Peroni beer or a nice coffee!<br />
+          If you need support or find any problems, write directly on GitHub,
+          to the extent possible I will try to respond, for work-related
+          issues you can use my public email <a href=mailto:“nextechnics@gmail.com?subject=From%20GithHub%20”>nextechnics@gmail.com</a> and ask for
+          a consultation. <br />
+          It's time for me to say goodbye!<br />
+          Bye, see you soon Francesco.
+        </p>
+      </div>
+      <div id="projects" class="col-12 table-responsive">
+        <h1>My Projects</h1>
+        <span id="mysvg_cont">
+        <svg class="mysvg" viewBox="0 0 200 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/">
+            <g id="corpo">
+                <g transform="matrix(0.946643,0,0,0.951943,5.9011,5.24029)">
+                    <path d="M102.527,0C140.82,0 171.523,30.894 171.523,69.19L171.523,195.911C171.523,197.563 170.754,199.056 169.227,199.687C168.72,199.898 168.415,199.998 167.888,199.998C166.825,199.998 165.781,199.583 164.998,198.801L151.54,185.342L138.082,198.801C136.485,200.397 133.898,200.397 132.302,198.801L118.843,185.342L105.384,198.801C103.788,200.397 101.199,200.397 99.603,198.801L86.141,185.342L72.676,198.801C71.079,200.397 68.479,200.397 66.882,198.801L53.092,185.039L35.456,199.104C34.229,200.086 32.434,200.278 31.021,199.595C29.604,198.913 28.477,197.484 28.477,195.911L28.477,69.19C28.477,30.894 60.085,0 98.379,0L102.527,0Z" style="fill:rgb(0,69,255);fill-rule:nonzero;stroke:rgb(0,29,107);stroke-width:5.34px;"/>
+                </g>
+                <g id="occhio_s" transform="matrix(1.23474,0,0,1.24165,-12.0941,-12.7228)">
+                    <path id="occhio_sinistro" d="M75.931,61.04C70.297,61.04 65.713,65.622 65.713,71.257C65.713,76.893 70.296,81.475 75.931,81.475C81.564,81.475 86.148,76.893 86.148,71.257C86.148,65.622 81.564,61.04 75.931,61.04ZM75.931,73.301C74.803,73.301 73.888,72.383 73.888,71.257C73.888,70.132 74.803,69.214 75.931,69.214C77.058,69.214 77.974,70.132 77.974,71.257C77.975,72.383 77.058,73.301 75.931,73.301Z" style="fill:white;fill-rule:nonzero;stroke:rgb(0,29,107);stroke-width:0.81px;"/>
+                </g>
+                <g id="occhio_d" transform="matrix(1.23146,0,0,1.23836,-31.6678,-12.488)">
+                    <path id="occhio_destro" d="M124.975,61.04C119.341,61.04 114.757,65.622 114.757,71.257C114.757,76.893 119.341,81.475 124.975,81.475C130.608,81.475 135.192,76.893 135.192,71.257C135.192,65.622 130.608,61.04 124.975,61.04ZM124.975,73.301C123.847,73.301 122.931,72.383 122.931,71.257C122.931,70.132 123.847,69.214 124.975,69.214C126.102,69.214 127.018,70.132 127.018,71.257C127.018,72.383 126.102,73.301 124.975,73.301Z" style="fill:white;fill-rule:nonzero;stroke:black;stroke-width:0.81px;"/>
+                </g>
+            </g>
+        </svg>
+      </span>
+      </div>
+      <div id="chartdiv" class="col-12 mx-auto">
+        <h1>My Stats</h1>
+          <canvas id="github-chart"></canvas>
+      </div>
+      <div id="about" class="imgrid col-12">
+        <h1>About me...</h1>
+        <p>
+          Hi curious one, if you've made it this far, then you want to know
+          something about me! My name is Francesco or Gerry, I'm a software
+          developer. I started writing code back in the 80s, like all the kids
+          of that era, I was very impressed by those first computers that
+          became part of the furniture at home. During these long and
+          beautiful years, I had the opportunity to develop many things in
+          various languages, both client-side and server-side, and in recent
+          years, I've also moved into both front-end and back-end
+          applications. I couldn't say which language interested me the most,
+          but back then, the amount of individual effort was much greater.
+          Today, everything is much more enjoyable, even though the
+          proliferation of frameworks and high-level languages is not, in my
+          opinion, a great and beautiful evolution. I'm not a fan of any
+          particular language. In recent years, there's been a lot of talk
+          about how AI will replace all of us in everything, but I still find
+          this to be a pipe dream. In fact, I think it's impractical since the
+          market needs consumers, which means humans will have to do
+          something, right? So, personally, I see AI as valuable support for
+          my thinking brain for all those tedious and repetitive operations
+          that an AI can do, but also a much faster and more precise method to
+          access knowledge when I have gaps in my developer skills! I hope
+          they can even succeed in solving and curing the diseases that
+          afflict humanity. Today, I wrote something "human-readable," and I'm
+          proud of myself! As you know, we're not really very social people...
+          So, now I'll leave you to your business. I hope you found what you
+          discovered about me interesting; otherwise, friends as before!
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/chart.min.js"></script>
+  <script src="js/chartjs-plugin-datalabels.js"></script>
+  
+  <!-- Load Chart.js library -->
+  <script>
+function _0x39ef(){const _0xde9d4e=['#F1C40F','contenitore','stateObject','name','207vSixuK','\x5c+\x5c+\x20*(?:[a-zA-Z_$][0-9a-zA-Z_$]*)','#9B59B6','#2ECC71','#E67E22','json','createElement','function\x20*\x5c(\x20*\x5c)','getHours','#E74C3C','map','languages_url','innerHTML','resize','error','github-chart','classList','join','#3498DB','#contenitore','apply','querySelector','reduce','https://api.github.com/repos/gerfra/gerfra/readme','entries','setAttribute','402775RCTwta','observe','constructor','repository','return\x20(function()\x20','3101271GeKsum','gger','languages','lnav','div','counter','catch','tbody','getMinutes','922976ATzrof','length','10151309ULksaP','textContent','projects','forEach','clock','gerfra.github.io','style','getElementById','html_url','toString','while\x20(true)\x20{}','mobile','isIntersecting','remove','innerWidth','prototype','appendChild','Linguaggi','license','string','#7F8C8D','86236ujGjdx','title','toFixed','prepend','bottom','animated','includes','fadeInDown','thead','log','debu','test','table','inter','add','warn','addEventListener','about','#16A085','2019610GIUkbA','__proto__','action','15TDLzmV','DOMContentLoaded','gerfra','replace','then','keys','2577162hdNPnr','bind','console','display','parentElement','init','doughnut'];_0x39ef=function(){return _0xde9d4e;};return _0x39ef();}const _0x3fbad3=_0x5f57;(function(_0x3d268d,_0x198c32){const _0x2b4262=_0x5f57,_0x406161=_0x3d268d();while(!![]){try{const _0x338bb1=-parseInt(_0x2b4262(0x194))/0x1+parseInt(_0x2b4262(0x166))/0x2+parseInt(_0x2b4262(0x199))/0x3+-parseInt(_0x2b4262(0x1b9))/0x4*(parseInt(_0x2b4262(0x169))/0x5)+parseInt(_0x2b4262(0x16f))/0x6+parseInt(_0x2b4262(0x1a4))/0x7+parseInt(_0x2b4262(0x1a2))/0x8*(-parseInt(_0x2b4262(0x17a))/0x9);if(_0x338bb1===_0x198c32)break;else _0x406161['push'](_0x406161['shift']());}catch(_0x35f01d){_0x406161['push'](_0x406161['shift']());}}}(_0x39ef,0xc3ddc));const _0x8d7f13=(function(){let _0xa0adc1=!![];return function(_0x145a6b,_0x4d2cd0){const _0x655415=_0xa0adc1?function(){const _0x3168ae=_0x5f57;if(_0x4d2cd0){const _0x43f265=_0x4d2cd0[_0x3168ae(0x18e)](_0x145a6b,arguments);return _0x4d2cd0=null,_0x43f265;}}:function(){};return _0xa0adc1=![],_0x655415;};}());(function(){_0x8d7f13(this,function(){const _0x368042=_0x5f57,_0x2f10c2=new RegExp(_0x368042(0x181)),_0x3d916f=new RegExp(_0x368042(0x17b),'i'),_0x2fc540=_0x420b51(_0x368042(0x174));!_0x2f10c2[_0x368042(0x1c4)](_0x2fc540+'chain')||!_0x3d916f[_0x368042(0x1c4)](_0x2fc540+'input')?_0x2fc540('0'):_0x420b51();})();}());const _0x992014=(function(){let _0x1c5462=!![];return function(_0x45548a,_0xef77ed){const _0x3d508f=_0x1c5462?function(){const _0x328089=_0x5f57;if(_0xef77ed){const _0x1da4ca=_0xef77ed[_0x328089(0x18e)](_0x45548a,arguments);return _0xef77ed=null,_0x1da4ca;}}:function(){};return _0x1c5462=![],_0x3d508f;};}()),_0x5298d0=_0x992014(this,function(){const _0x274ad8=_0x5f57,_0x57a94e=function(){const _0x22eac4=_0x5f57;let _0x4ca77d;try{_0x4ca77d=Function(_0x22eac4(0x198)+'{}.constructor(\x22return\x20this\x22)(\x20)'+');')();}catch(_0x3342fa){_0x4ca77d=window;}return _0x4ca77d;},_0x37ed2b=_0x57a94e(),_0x1bc672=_0x37ed2b[_0x274ad8(0x171)]=_0x37ed2b[_0x274ad8(0x171)]||{},_0x3782bf=[_0x274ad8(0x1c2),_0x274ad8(0x162),'info',_0x274ad8(0x188),'exception',_0x274ad8(0x1c5),'trace'];for(let _0x962b3a=0x0;_0x962b3a<_0x3782bf[_0x274ad8(0x1a3)];_0x962b3a++){const _0x299277=_0x992014[_0x274ad8(0x196)][_0x274ad8(0x1b3)]['bind'](_0x992014),_0x201621=_0x3782bf[_0x962b3a],_0x1f3ca6=_0x1bc672[_0x201621]||_0x299277;_0x299277[_0x274ad8(0x167)]=_0x992014[_0x274ad8(0x170)](_0x992014),_0x299277[_0x274ad8(0x1ad)]=_0x1f3ca6[_0x274ad8(0x1ad)]['bind'](_0x1f3ca6),_0x1bc672[_0x201621]=_0x299277;}});function _0x5f57(_0x1d453c,_0x282381){const _0x51b344=_0x39ef();return _0x5f57=function(_0x5298d0,_0x992014){_0x5298d0=_0x5298d0-0x160;let _0x47d93c=_0x51b344[_0x5298d0];return _0x47d93c;},_0x5f57(_0x1d453c,_0x282381);}_0x5298d0(),document[_0x3fbad3(0x163)](_0x3fbad3(0x16a),function(){const _0x1976e2=_0x3fbad3;setInterval(_0x584657,0x3e8);function _0x584657(){const _0x882c58=_0x5f57;let _0x2630a6=new Date(),_0x28ff07=_0x2630a6[_0x882c58(0x182)](),_0x5a2cb1=_0x2630a6[_0x882c58(0x1a1)](),_0x256bd8=_0x2630a6['getSeconds'](),_0x13f4d6='AM';_0x28ff07>0xc&&(_0x28ff07-=0xc,_0x13f4d6='PM');_0x28ff07==0x0&&(hr=0xc,_0x13f4d6='AM');_0x28ff07=_0x28ff07<0xa?'0'+_0x28ff07:_0x28ff07,_0x5a2cb1=_0x5a2cb1<0xa?'0'+_0x5a2cb1:_0x5a2cb1,_0x256bd8=_0x256bd8<0xa?'0'+_0x256bd8:_0x256bd8;let _0x459f2b=_0x28ff07+':'+_0x5a2cb1+':'+_0x256bd8+_0x13f4d6;window[_0x882c58(0x1b2)]>0x300&&(document[_0x882c58(0x1ab)](_0x882c58(0x1a8))[_0x882c58(0x186)]=_0x459f2b);}_0x584657();const _0x503f7b=document[_0x1976e2(0x18f)](_0x1976e2(0x18d)),_0x3ad410={'rootMargin':'-100px\x200px\x200px\x200px','threshold':0x0},_0x4e835c=new IntersectionObserver(function(_0x2e8ea7,_0x4872f8){const _0x5e7d5e=_0x1976e2;_0x2e8ea7[_0x5e7d5e(0x1a7)](_0x1b1a27=>{const _0x3f44a4=_0x5e7d5e;_0x1b1a27[_0x3f44a4(0x1b0)]?(_0x503f7b['classList'][_0x3f44a4(0x161)](_0x3f44a4(0x1be),_0x3f44a4(0x1c0)),_0x503f7b[_0x3f44a4(0x18a)]['add'](_0x3f44a4(0x160))):(_0x503f7b[_0x3f44a4(0x18a)]['remove'](_0x3f44a4(0x1be),_0x3f44a4(0x1c0)),_0x503f7b[_0x3f44a4(0x18a)][_0x3f44a4(0x1b1)]('inter'));});},_0x3ad410);_0x4e835c[_0x1976e2(0x195)](_0x503f7b);const _0x1f2d0b=document[_0x1976e2(0x1ab)](_0x1976e2(0x1af)),_0x175ae8=document[_0x1976e2(0x1ab)](_0x1976e2(0x19c)),_0x2da09b=document['getElementById'](_0x1976e2(0x177)),_0x2c0771=()=>{const _0x299b65=_0x1976e2;window[_0x299b65(0x1b2)]<=0x300?(!_0x1f2d0b[_0x299b65(0x173)]&&_0x2da09b['prepend'](_0x1f2d0b),_0x175ae8['parentElement']&&_0x175ae8[_0x299b65(0x1b1)]()):(!_0x175ae8[_0x299b65(0x173)]&&_0x2da09b[_0x299b65(0x1bc)](_0x175ae8),_0x1f2d0b[_0x299b65(0x173)]&&_0x1f2d0b['remove']());};window['addEventListener'](_0x1976e2(0x187),_0x2c0771),_0x2c0771();async function _0x4280c9(){const _0x4b862c=_0x1976e2,_0x44c197='https://api.github.com/users/gerfra/repos',_0x4283f8=['esp8266FTPServer',_0x4b862c(0x16b),_0x4b862c(0x1a9)],_0x1a422d={},_0x29b7b9=document[_0x4b862c(0x1ab)](_0x4b862c(0x1a6)),_0x18a2f9=document[_0x4b862c(0x180)](_0x4b862c(0x1c5));_0x18a2f9[_0x4b862c(0x18a)]['add'](_0x4b862c(0x1c5),'table-hover','table-dark');const _0xf2ebcc=document[_0x4b862c(0x180)](_0x4b862c(0x1c1)),_0x225c2d=document[_0x4b862c(0x180)]('tr'),_0x2b8e69=document['createElement']('th');_0x2b8e69[_0x4b862c(0x1a5)]=_0x4b862c(0x197);const _0x2510ad=document['createElement']('th');_0x2510ad[_0x4b862c(0x1a5)]='license';const _0x39a567=document[_0x4b862c(0x180)]('th');_0x39a567['textContent']=_0x4b862c(0x19b),_0x225c2d['appendChild'](_0x2b8e69),_0x225c2d['appendChild'](_0x39a567),_0x225c2d[_0x4b862c(0x1b4)](_0x2510ad),_0xf2ebcc['appendChild'](_0x225c2d),_0x18a2f9[_0x4b862c(0x1b4)](_0xf2ebcc);const _0x123fa2=document['createElement'](_0x4b862c(0x1a0)),_0x3af00c=document['getElementById']('mysvg_cont');_0x3af00c[_0x4b862c(0x1aa)][_0x4b862c(0x172)]='block';try{const _0x372df8=await fetch(_0x44c197),_0x3a75ca=await _0x372df8[_0x4b862c(0x17f)]();_0x3af00c[_0x4b862c(0x1aa)][_0x4b862c(0x172)]='none';for(let _0x465a8c of _0x3a75ca){if(_0x4283f8[_0x4b862c(0x1bf)](_0x465a8c[_0x4b862c(0x179)]))continue;const _0x1056d9=document[_0x4b862c(0x180)]('tr'),_0xec4028=document['createElement']('td'),_0x537473=document[_0x4b862c(0x180)]('a');_0x537473['href']=_0x465a8c[_0x4b862c(0x1ac)],_0x537473['textContent']=_0x465a8c[_0x4b862c(0x179)],_0x537473[_0x4b862c(0x193)](_0x4b862c(0x1ba),_0x465a8c['name']),_0xec4028[_0x4b862c(0x1b4)](_0x537473),_0x1056d9[_0x4b862c(0x1b4)](_0xec4028);const _0x2ed2ec=await fetch(_0x465a8c[_0x4b862c(0x185)]),_0x4a792d=await _0x2ed2ec[_0x4b862c(0x17f)](),_0x2e9eae={};let _0x3abab6=0x0;for(let _0x50cca2 in _0x4a792d){_0x50cca2 in _0x1a422d?_0x1a422d[_0x50cca2]+=_0x4a792d[_0x50cca2]:_0x1a422d[_0x50cca2]=_0x4a792d[_0x50cca2],_0x3abab6+=_0x4a792d[_0x50cca2],_0x2e9eae[_0x50cca2]=_0x4a792d[_0x50cca2];}const _0x1c1045=document[_0x4b862c(0x180)]('td');_0x1c1045[_0x4b862c(0x1a5)]=Object[_0x4b862c(0x192)](_0x2e9eae)[_0x4b862c(0x184)](([_0x26f770,_0x45abe1])=>_0x26f770+'\x20('+Math['round'](_0x45abe1/_0x3abab6*0x64*0xa)/0xa+'%)')[_0x4b862c(0x18b)](',\x20'),_0x1056d9[_0x4b862c(0x1b4)](_0x1c1045);const _0x378e24=document['createElement']('td');_0x465a8c['license']&&_0x465a8c[_0x4b862c(0x1b6)][_0x4b862c(0x179)]&&(_0x378e24[_0x4b862c(0x1a5)]=_0x465a8c[_0x4b862c(0x1b6)][_0x4b862c(0x179)],_0x1056d9[_0x4b862c(0x1b4)](_0x378e24)),_0x123fa2['appendChild'](_0x1056d9);}_0x18a2f9['appendChild'](_0x123fa2),_0x29b7b9[_0x4b862c(0x1b4)](_0x18a2f9);const _0x17ee1f=Object['values'](_0x1a422d),_0x365eea=_0x17ee1f[_0x4b862c(0x190)]((_0x40541c,_0x5ecb28)=>_0x40541c+_0x5ecb28,0x0),_0x138cd3=_0x17ee1f['map'](_0x5ee6c6=>(_0x5ee6c6/_0x365eea*0x64)[_0x4b862c(0x1bb)](0x2)),_0x360f60=Object[_0x4b862c(0x16e)](_0x1a422d),_0x462e2e={'labels':_0x360f60,'datasets':[{'label':_0x4b862c(0x1b5),'data':_0x138cd3,'hoverOffset':0x1,'rotation':-0x5a,'circumference':0xb4,'backgroundColor':[_0x4b862c(0x17d),_0x4b862c(0x18c),_0x4b862c(0x17c),_0x4b862c(0x176),_0x4b862c(0x17e),_0x4b862c(0x183),'#34495E',_0x4b862c(0x1b8),'#1ABC9C',_0x4b862c(0x165)]}]},_0x3ff4e2=document[_0x4b862c(0x1ab)](_0x4b862c(0x189));new Chart(_0x3ff4e2,{'type':_0x4b862c(0x175),'data':_0x462e2e,'options':{'plugins':{'legend':{'position':_0x4b862c(0x1bd)},'datalabels':{'formatter':_0x26c612=>{return _0x26c612+'%';}}},'layout':{'padding':{'top':0x0,'right':0x0,'bottom':0x0,'left':0x0},'margin':{'top':0x0,'right':0x0,'bottom':0x0,'left':0x0}}}});}catch(_0x11df4d){console[_0x4b862c(0x188)](_0x11df4d),_0x3af00c[_0x4b862c(0x1aa)]['display']='none';}}_0x4280c9();const _0x453f6b=_0x1976e2(0x191);fetch(_0x453f6b)[_0x1976e2(0x16d)](_0x35c2e1=>_0x35c2e1[_0x1976e2(0x17f)]())[_0x1976e2(0x16d)](_0x33d41b=>{const _0x25ef64=_0x1976e2,_0x193899=atob(_0x33d41b['content']),_0x268368=_0x193899[_0x25ef64(0x16c)](/(width|height)="(\d+)"/g,''),_0x587b58=document[_0x25ef64(0x180)](_0x25ef64(0x19d));_0x587b58[_0x25ef64(0x186)]=_0x268368;const _0x342822=document[_0x25ef64(0x1ab)](_0x25ef64(0x164));_0x342822[_0x25ef64(0x1b4)](_0x587b58);})[_0x1976e2(0x19f)](_0x1ccdbd=>console[_0x1976e2(0x188)](_0x1ccdbd));});function _0x420b51(_0x2822ec){function _0x4269e4(_0x13c7c9){const _0x14f424=_0x5f57;if(typeof _0x13c7c9===_0x14f424(0x1b7))return function(_0x4732f2){}['constructor'](_0x14f424(0x1ae))[_0x14f424(0x18e)](_0x14f424(0x19e));else(''+_0x13c7c9/_0x13c7c9)['length']!==0x1||_0x13c7c9%0x14===0x0?function(){return!![];}[_0x14f424(0x196)](_0x14f424(0x1c3)+_0x14f424(0x19a))['call'](_0x14f424(0x168)):function(){return![];}['constructor'](_0x14f424(0x1c3)+_0x14f424(0x19a))[_0x14f424(0x18e)](_0x14f424(0x178));_0x4269e4(++_0x13c7c9);}try{if(_0x2822ec)return _0x4269e4;else _0x4269e4(0x0);}catch(_0x2ff826){}}
+  </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-

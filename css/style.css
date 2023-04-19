@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Prompt:wght@200;600&display=swap");
+
+body {
+  overflow-x: hidden;
+  font-family: "Prompt", sans-serif;
+}
+
+#lnav {
+  width: 280px;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  margin-top: 60px;
+}
+
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+
+#contenitore {
+  margin-left: 0px;
+  background-color: #212529;
+  color: black;
+}
+
+#contenitore .row {
+  height: 100%;
+  /*display: flex;
+  align-items: center;
+  justify-content: center;*/
+}
+
+#contenitore h1 {
+  color: #3a3a3c;
+  text-align: right;
+  padding: 0.3em;
+}
+
+#contenitore p {
+  color: #3a3a3c;
+  background-color: #ffffff40;
+  border-radius: 2%;
+  padding: 1.3em;
+}
+
+#contenitore github-chart {
+  text-align: center;
+  max-height: 50%;
+  vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+  #lnav {
+    margin-top: 0px;
+    left: 0;
+  }
+
+  #contenitore {
+    margin-left: 280px;
+    width: calc(100% - 280px);
+  }
+
+  #mobile {
+    display: none;
+  }
+}
+
+#home {
+  background-color: #ffcf2f !important;
+}
+
+#projects {
+  background-color: #ea3546 !important;
+}
+
+#project a:link {
+  color: FFCF2F;
+}
+
+#project a:hover,
+#project a:active {
+  color: #fff;
+}
+
+#chartdiv {
+  background-color: #e68ab9 !important;
+}
+
+#about {
+  background-color: #746aaf !important;
+}
+
+.imgrid {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.imgrid p {
+  padding-top: 10px;
+}
+
+.imgrid img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 0 10px;
+  max-height: 50px;
+  object-fit: contain;
+}
+
+:root {
+  --nav-pills-active-bg: #288ba8;
+  --nav-pills-active: #000;
+  --nav-pills-inactive-color: #fff;
+}
+
+.nav-pills .nav-link {
+  color: var(--nav-pills-inactive-color);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: var(--nav-pills-active-bg);
+  color: var(--nav-pills-active);
+}
+
+#mysvg_cont {
+  display: none;
+  min-height: 200px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.mysvg {
+  border: 1rem solid #f3f3f3;
+  /* bordo grigio */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position: relative;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  background-color: #f3f3f321;
+  padding: 0.5rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#github-chart {
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 90%;
+}
