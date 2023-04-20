@@ -1,3 +1,4 @@
+/* Francesco Gerratana 2023 */
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@200;600&display=swap");
 
 body {
@@ -19,22 +20,23 @@ body {
 }
 
 #contenitore {
-  margin-left: 0px;
+  margin-left: 0;
   background-color: #212529;
-  color: black;
+  color: rgb(0, 0, 0);
 }
 
 #contenitore .row {
   height: 100%;
-  /*display: flex;
-  align-items: center;
-  justify-content: center;*/
 }
 
 #contenitore h1 {
-  color: #3a3a3c;
   text-align: right;
   padding: 0.3em;
+  color: transparent;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  font-weight: 600;
 }
 
 #contenitore p {
@@ -52,7 +54,7 @@ body {
 
 @media (min-width: 768px) {
   #lnav {
-    margin-top: 0px;
+    margin-top: 0;
     left: 0;
   }
 
@@ -67,11 +69,19 @@ body {
 }
 
 #home {
-  background-color: #ffcf2f !important;
+  background-color: #ffcf2f;
+}
+#home h1 {
+  background-color: #66510a;
+  text-shadow: 2px 2px 3px rgba(230, 230, 230, 0.23);
 }
 
 #projects {
-  background-color: #ea3546 !important;
+  background-color: #ea3546;
+}
+#projects h1 {
+  background-color: #8b0b17;
+  text-shadow: 2px 2px 3px rgba(141, 125, 125, 0.5);
 }
 
 #project a:link {
@@ -84,13 +94,20 @@ body {
 }
 
 #chartdiv {
-  background-color: #e68ab9 !important;
+  background-color: #e68ab9;
+}
+#chartdiv h1 {
+  background-color: #5a3548;
+  text-shadow: 2px 2px 3px rgba(187, 187, 187, 0.5);
 }
 
 #about {
-  background-color: #746aaf !important;
+  background-color: #746aaf;
 }
-
+#about h1 {
+  background-color: #4c4571;
+  text-shadow: 2px 2px 3px rgba(120, 120, 120, 0.5);
+}
 .imgrid {
   flex-wrap: wrap;
   justify-content: space-between;
@@ -136,7 +153,6 @@ body {
 
 .mysvg {
   border: 1rem solid #f3f3f3;
-  /* bordo grigio */
   border-radius: 50%;
   width: 120px;
   height: 120px;
@@ -156,11 +172,4 @@ body {
   100% {
     transform: rotate(360deg);
   }
-}
-
-#github-chart {
-  margin: 0px;
-  padding: 0px;
-  width: 90%;
-  height: 90%;
 }
